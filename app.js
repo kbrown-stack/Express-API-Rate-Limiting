@@ -26,7 +26,7 @@ const limiter = rateLimit({
 // For security ,i used helmet below. This Helps secure Express apps by setting HTTP response headers.
 // app.use(helmet)
 
-// Here you apply the rate limit middleware to all request below
+// Here below you apply the rate limit middleware to all request below
 
 app.use(limiter)
 
