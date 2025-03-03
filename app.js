@@ -17,7 +17,7 @@ connectToMongoDB()
 
 const limiter = rateLimit({
     windowMS: 0.2 * 60 * 1000, // this is less than a second
-    max: 4, // This limits each IP to 4 request per windoms
+    max: 5, // This limits each IP to 5 request per windoms
     standardHeaders: true, // This returns rate limit info in the ratelimit headers
     legacyHeaders: false, // This disable the X- RateLimit -* headers
 
